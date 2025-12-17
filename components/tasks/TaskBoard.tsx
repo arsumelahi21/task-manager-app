@@ -7,17 +7,17 @@ import { useState } from 'react'
 const STATUSES = ['todo', 'in-progress', 'done'] as const
 
 export default function TaskBoard({
- tasks,
- loading,
-  onChange,
-  onEdit,
-  onDelete,
+tasks,
+loading,
+onChange,
+onEdit,
+onDelete,
 }: {
-  tasks: Task[]
-  loading: boolean
-  onChange: () => void
-  onEdit: (task: Task) => void
-  onDelete: (id: string) => void
+tasks: Task[]
+loading: boolean
+onChange: () => void
+onEdit: (task: Task) => void
+onDelete: (id: string) => void
 }) {
   const [search, setSearch] = useState('')
 
