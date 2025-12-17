@@ -70,6 +70,7 @@ export default function TasksPage() {
 
     <TaskBoard
         tasks={filteredTasks}
+        loading={loadingTasks}
         onChange={fetchTasks}
         onEdit={setEditTask}
         onDelete={setDeleteId}
